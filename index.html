@@ -5,11 +5,18 @@
 </head>
 <body>
 
-<button type="submit" id="submit">Нажми меня</button>
-    <script>
-    document.querySelector("#submit").onclick = function(){
-  alert("Вы нажали на кнопку");
-        </script>
-}
+<button id="myButton">Нажми меня</button>
+
+<script>
+// Получаем ссылку на кнопку по ее идентификатору
+var button = document.getElementById("myButton");
+
+// Добавляем обработчик события "click" на кнопку
+button.addEventListener("click", function() {
+    // Выводим сообщение "Привет" с помощью alert
+    alert("Привет");
+});
+</script>
+
 </body>
 </html>
